@@ -20,7 +20,7 @@ void Pause() {
     system("pause");
 #else
     cout << GRAY << "Press ENTER to continue...";
-    cin.ignore();
+    // cin.ignore();
     cin.get();
 #endif
 }
