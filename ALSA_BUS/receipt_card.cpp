@@ -97,7 +97,7 @@ void ALSA::receipt_card() {
                         return 31;
                     };
 
-                    int end_month = (shops[j].start_month == 12) ? 1 : shops[j].start_month;
+                    int end_month = (shops[j].start_month == 12) ? 1 : shops[j].start_month + 1;
                     int end_year  = (shops[j].start_month == 12) ? shops[j].start_year + 1 : shops[j].start_year;
                     int end_day   = last_day_of_month(end_month, end_year); // always last day of next month
 
